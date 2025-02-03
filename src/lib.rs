@@ -35,6 +35,7 @@ fn filling_prob(n: usize, m: usize, probabilities: Vec<Vec<f64>>) -> PyResult<f6
     }
 
     filling_prob = f64::max(filling_prob, 0.0);
+    filling_prob = f64::min(filling_prob, 1.0);
     
     Ok(filling_prob)
 }
