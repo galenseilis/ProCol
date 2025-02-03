@@ -3,7 +3,6 @@ use crate::{single_event_prob, filling_prob};
 #[cfg(test)]
 mod tests {
     use super::*;
-    use itertools::Itertools;
 
     #[test]
     fn test_single_event_prob() {
