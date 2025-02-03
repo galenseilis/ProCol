@@ -33,6 +33,8 @@ fn filling_prob(n: usize, m: usize, probabilities: Vec<Vec<f64>>) -> PyResult<f6
         
         filling_prob -= (-1.0f64).powi((k + 1) as i32) * sum_comb;
     }
+
+    filling_prob = f64::max(filling_prob, 0.0);
     
     Ok(filling_prob)
 }
