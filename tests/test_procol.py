@@ -80,7 +80,12 @@ def test_edge_case_single_event():
     result = procol.filling_prob(n, m, probabilities)
     assert 0.0 <= result <= 1.0
 
+####################
+# REGRESSION TESTS #
+####################
+
 def test_regression_0():
-    result = procol.filling_prob(1,2,[[0.1, 0.2]])
+    """This was negative."""
+    result = procol.filling_prob(1, 2 ,[[0.1, 0.2]])
     assert result >= 0
 
