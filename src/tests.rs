@@ -1,6 +1,10 @@
+use crate::filling_prob;
+use crate::single_event_prob;
+
 #[cfg(test)]
 mod tests {
-    use super::*;
+    use super::single_event_prob;
+    use super::filling_prob;
 
     #[test]
     fn test_single_event_prob() {
