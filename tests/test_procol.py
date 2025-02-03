@@ -81,6 +81,6 @@ def test_edge_case_single_event():
     assert 0.0 <= result <= 1.0
 
 def test_regression_0():
-    result = procal.filling_prob(1,2,[[0.1, 0.2]])
+    result = procol.filling_prob(1,2,[[0.1, 0.2]])
     assert result >= 0
 
