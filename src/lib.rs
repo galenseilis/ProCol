@@ -1,6 +1,8 @@
 use pyo3::prelude::*;
 use itertools::Itertools;
 
+mod tests; // Import the tests module
+
 /// Calculate the probability that none of the specified events occur in any of the n trials.
 fn single_event_prob(n: usize, event_indices: &[usize], probabilities: &[Vec<f64>]) -> f64 {
     (0..n).fold(1.0, |acc, i| {
